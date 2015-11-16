@@ -32,7 +32,7 @@ module.exports = function (gruntOrShipit) {
       }
 
       return shipit[method](
-        sprintf('pm2 startOrRestart %s', shipit.config.pm2.json)
+        sprintf('/home/choozit/choozit/current/node_modules/pm2/bin/pm2 startOrRestart %s', shipit.config.pm2.json)
       );
 
     }
